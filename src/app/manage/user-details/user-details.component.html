@@ -1,0 +1,26 @@
+<div class="user-details-div" *ngIf="user|json" @userDetailAnimate>
+    <div class="user-name">{{user.firstName}} {{user.lastName}}</div>
+    <div [ngStyle]="{'color': user.isDeleted?'red':'green' }">
+        {{ user | userStatus }}
+    </div>
+    <div class="row">
+        <div class="col">Login-ID</div>
+        <div class="col">{{user?.login}}</div>
+    </div>
+    <div class="row">
+        <div class="col">First Name</div>
+        <div class="col">{{user?.firstName}}</div>
+    </div>
+    <div class="row">
+        <div class="col">Last Name</div>
+        <div class="col">{{user?.lastName}}</div>
+    </div>
+    <div class="row">
+        <div class="col">Age</div>
+        <div class="col"> {{user?.age}}</div>
+    </div>
+    <div class="row">
+        <div class="col"><i> Last Updated   </i></div>
+        <div class="col"><i> {{user?.updatedAt | date:'mediumDate'}} </i></div>
+    </div>
+</div>

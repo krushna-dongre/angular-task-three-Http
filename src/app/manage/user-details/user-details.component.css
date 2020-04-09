@@ -1,0 +1,14 @@
+.user-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.user-details-div {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.user-details-div div {
+    padding: 2px;
+}

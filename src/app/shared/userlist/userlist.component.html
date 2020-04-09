@@ -1,0 +1,4 @@
+<div class="container" *ngFor="let user of (usersList | async)">
+    <app-user [user]="user" [route]="route">
+    </app-user>
+</div>

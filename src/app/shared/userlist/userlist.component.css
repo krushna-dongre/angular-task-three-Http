@@ -1,0 +1,15 @@
+.user-div {
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.btn-div {
+    margin-left: 90%;
+}
+
+.user-name {
+    font-size: 25px;
+    font-weight: 400;
+}
